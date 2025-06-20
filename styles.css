@@ -284,6 +284,7 @@ footer {
   text-align: center;
   font-size: 0.9rem;
 }
+/* Stylowanie przycisków "Wybierz ten pakiet" */
 .package-select-btn {
   margin-top: 15px;
   padding: 10px;
@@ -299,6 +300,7 @@ footer {
   background-color: #0056b3;
 }
 
+/* Stylowanie przycisków "Zamów i zapłać" */
 .payment-button {
   display: inline-block;
   margin-top: 10px;

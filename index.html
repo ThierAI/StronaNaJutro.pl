@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StronaNaJutro.pl</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="#" class="logo"><img src="images/logo.png" alt="TwojaStronaAI" width="150"></a>
+      <nav>
+        <a href="#packages">Pakiety</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Strona internetowa gotowa nawet w 24 godziny</h1>
+      <p>Nowoczesne strony WWW generowane przez AI i dopracowane przez człowieka.</p>
+      <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Zamów stronę</button>
+    </div>
+  </section>
+
+  <!-- Jak to działa -->
+  <section class="how-it-works">
+    <div class="container">
+      <h2>Jak to działa?</h2>
+      <div class="steps">
+        <div class="step">
+          <img src="images/krok-wypelnij-formularz.jpg" alt="Krok 1">
+          <p>Wypełniasz formularz</p>
+        </div>
+        <div class="step">
+          <img src="images/krok-ai-generuje.jpg" alt="Krok 2">
+          <p>AI generuje treść i układ</p>
+        </div>
+        <div class="step">
+          <img src="images/krok-dopracujemy-ręcznie.jpg" alt="Krok 3">
+          <p>My poprawiamy i optymalizujemy</p>
+        </div>
+        <div class="step">
+          <img src="images/krok-gotowa-strona.jpg" alt="Krok 4">
+          <p>Otrzymujesz gotową stronę w 24–72h</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pakiety cenowe -->
+  <section class="packages" id="packages">
+    <div class="container">
+      <h2>Pakiety cenowe</h2>
+      <div class="package-grid">
+        <div class="package-card">
+          <h3>BASIC</h3>
+          <p class="price">299 zł</p>
+          <ul class="features">
+            <li>Prosta strona (landing page)</li>
+            <li>Teksty generowane przez AI</li>
+            <li>Publikacja strony</li>
+            <li>1 poprawka</li>
+          </ul>
+        </div>
+        <div class="package-card">
+          <h3>STANDARD</h3>
+          <p class="price">599 zł</p>
+          <ul class="features">
+            <li>Strona z 3–4 sekcjami</li>
+            <li>Formularz kontaktowy</li>
+            <li>Podstawowe SEO</li>
+            <li>2 poprawki</li>
+          </ul>
+        </div>
+        <div class="package-card">
+          <h3>PREMIUM</h3>
+          <p class="price">999 zł</p>
+          <ul class="features">
+            <li>Rozbudowana strona</li>
+            <li>CMS do zarządzania treścią</li>
+            <li>Wygenerowane logo AI</li>
+            <li>Hosting przez 1 rok</li>
+            <li>Wsparcie 30 dni</li>
+            <li>3 poprawki</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dla kogo to jest -->
+  <section class="target-audience">
+    <div class="container">
+      <h2>Dla kogo to jest?</h2>
+      <div class="audience-grid">
+        <div class="audience-item">
+          <img src="images/ikonka-male-firmy.png" alt="Małe firmy">
+          <p>Małe firmy i jednoosobowe działalności</p>
+        </div>
+        <div class="audience-item">
+          <img src="images/ikonka-freelancerzy.png" alt="Freelancerzy">
+          <p>Freelancerzy, trenerzy, salony</p>
+        </div>
+        <div class="audience-item">
+          <img src="images/ikonka-kazdy.png" alt="Każdy">
+          <p>Każdy, kto potrzebuje strony bez komplikacji</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Przykładowe realizacje -->
+  <section class="examples" id="examples">
+    <div class="container">
+      <h2>Przykładowe realizacje</h2>
+      <div class="mockup-grid">
+        <div class="mockup"><img src="images/przyklad1.png" alt="Przykład strony 1"></div>
+        <div class="mockup"><img src="images/przyklad2.jpg" alt="Przykład strony 2"></div>
+        <div class="mockup"><img src="images/przyklad3.jpg" alt="Przykład strony 3"></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <h2>FAQ</h2>
+      <div class="faq-items">
+        <div class="faq-item">
+          <h3>Czy strona działa na telefonach?</h3>
+          <p>Tak, wszystkie są responsywne.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Czy teksty muszę pisać sam?</h3>
+          <p>Nie – tworzymy je automatycznie.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Czy mogę sam edytować?</h3>
+          <p>Tak, w pakiecie PREMIUM.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Jak mogę zapłacić?</h3>
+          <p>Przelew, BLIK, kartą.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Zadaj pytanie lub zamów stronę</h2>
+      <form>
+        <input type="text" placeholder="Imię i nazwisko" required/>
+        <input type="email" placeholder="E-mail" required/>
+        <input type="text" placeholder="Nazwa firmy"/>
+        <textarea placeholder="Opisz krótko swoją firmę i oczekiwania..."></textarea>
+        <button type="submit">Wyślij formularz</button>
+      </form>
+      <div class="contact-info">
+        <p><strong>Email:</strong> kontakt@stronanajutro.pl</p>
+        <p><strong>Telefon:</strong> +48 123 456 789</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 StronaNaJutro.pl. Wszelkie prawa zastrzeżone.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

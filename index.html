@@ -68,6 +68,8 @@
             <li>Publikacja strony</li>
             <li>1 poprawka</li>
           </ul>
+          <button onclick="selectPackage('BASIC', '299')" class="package-select-btn">Wybierz ten pakiet</button>
+          <a href="https://sandbox.przelewy24.pl/trnRequest/xxx?amount=29900&description=Pakiet+BASIC" target="_blank" class="payment-button">Zamów i zapłać (BASIC)</a>
         </div>
         <div class="package-card">
           <h3>STANDARD</h3>
@@ -78,6 +80,8 @@
             <li>Podstawowe SEO</li>
             <li>2 poprawki</li>
           </ul>
+          <button onclick="selectPackage('STANDARD', '599')" class="package-select-btn">Wybierz ten pakiet</button>
+          <a href="https://sandbox.przelewy24.pl/trnRequest/xxx?amount=59900&description=Pakiet+STANDARD" target="_blank" class="payment-button">Zamów i zapłać (STANDARD)</a>
         </div>
         <div class="package-card">
           <h3>PREMIUM</h3>
@@ -90,6 +94,8 @@
             <li>Wsparcie 30 dni</li>
             <li>3 poprawki</li>
           </ul>
+          <button onclick="selectPackage('PREMIUM', '999')" class="package-select-btn">Wybierz ten pakiet</button>
+          <a href="https://sandbox.przelewy24.pl/trnRequest/xxx?amount=99900&description=Pakiet+PREMIUM" target="_blank" class="payment-button">Zamów i zapłać (PREMIUM)</a>
         </div>
       </div>
     </div>
@@ -161,14 +167,24 @@
         <input type="email" placeholder="E-mail" required/>
         <input type="text" placeholder="Nazwa firmy"/>
         <textarea placeholder="Opisz krótko swoją firmę i oczekiwania..."></textarea>
+
+        <label for="package">Wybrany pakiet:</label>
+        <select id="package" name="package" required>
+          <option value="">Wybierz pakiet</option>
+          <option value="BASIC - 299 zł">BASIC - 299 zł</option>
+          <option value="STANDARD - 599 zł">STANDARD - 599 zł</option>
+          <option value="PREMIUM - 999 zł">PREMIUM - 999 zł</option>
+        </select>
+
         <button type="submit">Wyślij formularz</button>
       </form>
       <div class="contact-info">
-        <p><strong>Email:</strong> thriveonshorts@gmail.com</p>
+        <p><strong>Email:</strong> kontakt@stronanajutro.pl</p>
         <p><strong>Telefon:</strong> +48 123 456 789</p>
       </div>
     </div>
   </section>
+
 
   <!-- Footer -->
   <footer>

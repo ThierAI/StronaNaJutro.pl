@@ -176,6 +176,17 @@
       <p>&copy; 2025 StronaNaJutro.pl. Wszelkie prawa zastrzeżone.</p>
     </div>
   </footer>
+  <!-- Skrypt JS -->
+  <script>
+    function selectPackage(packageName, packagePrice) {
+      const packageSelect = document.getElementById('package');
+      const selectedOption = `${packageName} - ${packagePrice} zł`;
+      packageSelect.value = selectedOption;
+      
+      // Przewiń do formularza
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
 
 </body>
 </html>

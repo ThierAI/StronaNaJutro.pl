@@ -67,10 +67,6 @@ nav a:hover {
   color: #333;
 }
 
-.header-logo .mini-logo {
-  height: 24px; /* małe pomocnicze logo */
-}
-
 /* Hero Section */
 .hero {
   padding: 100px 0;

@@ -244,11 +244,12 @@ nav a:hover {
 }
 
 .mockup {
-  background: #fff;
+  background: #000; /* Ciemna ramka */
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
+  position: relative;
 }
 
 .mockup img {
@@ -264,6 +265,36 @@ nav a:hover {
 
 .mockup:hover img {
   transform: scale(1.05);
+}
+
+/* Dodaj przesłonięcie na zdjęciach */
+.mockup::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Przesłonięcie ciemne */
+  transition: opacity 0.3s ease;
+  opacity: 0; /* Ukryte przy normalnym stanie */
+}
+
+.mockup:hover::before {
+  opacity: 1; /* Widoczne po hover */
+}
+
+.mockup h2,
+.mockup p {
+  color: #fff; /* Tekst biały */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  z-index: 1; /* Upewnij się, że tekst jest nad przesłonięciem */
 }
 
 /* Formularz kontaktowy */

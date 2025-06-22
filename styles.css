@@ -51,6 +51,26 @@ nav a:hover {
   color: #6a5acd; /* Granatowy akcent */
 }
 
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* odstęp między elementami */
+}
+
+.header-logo .main-logo {
+  height: 40px; /* zmniejszone główne logo */
+}
+
+.header-logo .company-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.header-logo .mini-logo {
+  height: 24px; /* małe pomocnicze logo */
+}
+
 /* Hero Section */
 .hero {
   padding: 100px 0;

@@ -123,7 +123,7 @@ nav a:hover {
 /* Sekcja pakietów */
 .packages {
   padding: 80px 0;
-  background: #222; /* Ciemny szary */
+  background: #111; /* Ciemny szary */
 }
 
 .packages h2 {
@@ -139,20 +139,22 @@ nav a:hover {
 }
 
 .package-card {
-  background: #222; /* Ciemny szary */
+  background: #111; /* Ciemny szary */
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
   color: #fff; /* Tekst biały */
+  border: 2px solid #6a5acd; /* Lekka fioletowa ramka */
 }
 
 .package-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Główne cienie na hover */
 }
 
 .package-card h3 {
-  color: #6a5acd; /* Granatowy nagłówki */
+  color: #6a5acd; /* Nagłówki w kolorze fioletowym */
   margin-bottom: 10px;
 }
 
@@ -171,6 +173,38 @@ nav a:hover {
 
 .features li {
   margin: 8px 0;
+}
+
+.package-select-btn {
+  padding: 14px 30px;
+  background: #6a5acd; /* Fioletowy przycisk */
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.package-select-btn:hover {
+  background: #483d8b; /* Jasniejszy fioletowy */
+}
+
+.payment-button {
+  padding: 14px 30px;
+  background: #6a5acd; /* Fioletowy przycisk */
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.payment-button:hover {
+  background: #483d8b; /* Jasniejszy fioletowy */
 }
 
 /* Formularz kontaktowy */

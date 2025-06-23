@@ -322,7 +322,7 @@ nav a:hover {
 
 .contact h2 {
   margin-bottom: 30px;
-  color: #111; /* Tekst biały */
+  color: #fff; /* Tekst biały */
 }
 
 .contact form {
@@ -340,7 +340,7 @@ nav a:hover {
   border: none;
   border-radius: 5px;
   background: #111; /* Szary tło polek */
-  color: #111; /* Tekst biały */
+  color: #fff; /* Tekst biały */
   font-size: 1rem;
 }
 

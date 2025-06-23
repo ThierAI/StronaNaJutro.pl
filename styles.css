@@ -339,8 +339,8 @@ nav a:hover {
   padding: 12px;
   border: none;
   border-radius: 5px;
-  background: #111; /* Szary tło polek */
-  color: #fff; /* Tekst biały */
+  background: #fff; /* Szary tło polek */
+  color: #111; /* Tekst biały */
   font-size: 1rem;
 }
 

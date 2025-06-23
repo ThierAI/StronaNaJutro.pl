@@ -302,7 +302,7 @@ nav a:hover {
 
 .mockup h2,
 .mockup p {
-  color: #fff; /* Tekst biały */
+  color: #111; /* Tekst biały */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -322,7 +322,7 @@ nav a:hover {
 
 .contact h2 {
   margin-bottom: 30px;
-  color: #fff; /* Tekst biały */
+  color: #111; /* Tekst biały */
 }
 
 .contact form {
@@ -339,7 +339,7 @@ nav a:hover {
   padding: 12px;
   border: none;
   border-radius: 5px;
-  background: #333; /* Szary tło polek */
+  background: #111; /* Szary tło polek */
   color: #fff; /* Tekst biały */
   font-size: 1rem;
 }

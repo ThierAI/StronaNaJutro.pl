@@ -10,19 +10,28 @@
 <body>
 
   <!-- Header -->
- <header>
-   <div class="container">
-     <div class="header-logo">
-       <a href="#"><img src="logo1.png" alt="Logo WebInk.pl" class="main-logo"></a>
-       <span class="company-name">WebInk.pl</span>
-     </div>
-     <nav>
-       <a href="#packages">Pakiety</a>
-       <a href="#contact">Kontakt</a>
-     </nav>
-   </div>
- </header>
+  <header class="hero-section">
+  <div class="container">
+    <div class="logo-container">
+      <img src="logo.png" alt="WebInk.pl Logo" class="logo">
+      <span class="company-name">WebInk.pl</span>
+    </div>
+    <nav>
+      <a href="#packages">Pakiety</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </div>
 
+  <!-- Główny baner -->
+  <section class="banner">
+    <div class="container">
+      <h1>Strona internetowa gotowa nawet w 24 godziny</h1>
+      <p>Nowoczesne strony WWW generowane przez AI i dopracowane przez człowieka.</p>
+      <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Zamów stronę</button>
+    </div>
+  </section>
+</header>
+  
   <!-- Hero Section -->
   <section class="hero">
     <div class="container">

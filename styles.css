@@ -340,7 +340,7 @@ nav a:hover {
   border: none;
   border-radius: 5px;
   background: #111; /* Szary tło polek */
-  color: #fff; /* Tekst biały */
+  color: #111; /* Tekst biały */
   font-size: 1rem;
 }
 

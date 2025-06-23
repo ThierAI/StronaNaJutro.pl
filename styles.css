@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #222; /* Tło ciemnoszare */
+  background-color: #111; /* Tło ciemnoszare */
   color: #fff; /* Tekst biały */
   line-height: 1.6;
 }
@@ -316,7 +316,7 @@ nav a:hover {
 /* Formularz kontaktowy */
 .contact {
   padding: 80px 0;
-  background: #fff; /* Ciemny szary */
+  background: #111; /* Ciemny szary */
   text-align: center;
 }
 

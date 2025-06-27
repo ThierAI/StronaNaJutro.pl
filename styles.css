@@ -66,50 +66,6 @@ nav a:hover {
   font-weight: 600;
   color: #333;
 
-.site-header {
-  background-color: #111;
-  padding: 20px 0;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo img {
-  height: 35px;
-}
-
-.company-name {
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-}
-
-nav a {
-  color: #ccc;
-  text-decoration: none;
-  margin-left: 20px;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #8e54e9;
-}
-
 /* Hero Section – nowoczesny design z obrazkiem */
 .hero {
   position: relative;

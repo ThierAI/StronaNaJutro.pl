@@ -15,6 +15,8 @@
      <div class="logo">
        <span class="company-name">weblnk.pl</span>
      </div>
+     <div class="menu-toggle" id="menuToggle">&#9776;</div> <!-- Hamburger -->
+     <nav id="mainNav">
       <nav>
         <a href="#packages">Pakiety</a>
         <a href="#contact">Kontakt</a>
@@ -233,5 +235,14 @@
     const paymentUrl = `https://sandbox.przelewy24.pl/trnRequest/xxx?amount=${amount}00&description=${description}`;
 
     window.location.href = paymentUrl; // Przekierowanie
+  });
+</script>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const mainNav = document.getElementById('mainNav');
+
+  menuToggle.addEventListener('click', () => {
+    mainNav.classList.toggle('active');
   });
 </script>

@@ -9,6 +9,7 @@
     body {
       font-family: 'Poppins', sans-serif;
       background-color: #f9f9f9;
+      color: #333;
       margin: 0;
       padding: 0;
     }
@@ -56,15 +57,6 @@
       border: 1px solid #ccc;
       border-radius: 6px;
       font-size: 15px;
-    }
-
-    select {
-      appearance: none;
-      background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'%3E%3Cpath fill='%23999' d='M7 10l5 5 5-5H7z'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right 10px center;
-      background-size: 12px;
-      padding-right: 30px;
     }
 
     .radio-group {
@@ -141,19 +133,7 @@
   <!-- E-mail -->
   <input type="email" placeholder="E-mail" required />
 
-  <!-- Dane dostawy -->
-  <h3>Dostawa</h3>
-  <select required>
-    <option value="">Kraj/region</option>
-    <option value="PL">Polska</option>
-  </select>
-  <input type="text" placeholder="Imię" required />
-  <input type="text" placeholder="Nazwisko" required />
-  <input type="text" placeholder="Adres" required />
-  <input type="text" placeholder="Mieszkanie, apartament itp. (opcjonalnie)" />
-  <input type="text" placeholder="Kod pocztowy" required />
-  <input type="text" placeholder="Miasto" required />
-  <input type="tel" placeholder="Telefon" required />
+  <!-- Dane dostawy (usunięte pola) -->
 
   <!-- Metoda wysyłki -->
   <h3>Metoda wysyłki</h3>

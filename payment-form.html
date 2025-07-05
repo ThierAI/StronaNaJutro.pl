@@ -4,13 +4,129 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Forma Płatności - WebInk.pl</title>
+
+  <!-- Czcionka -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles1.css">
+
+  <!-- Styli CSS (takie same jak na głównej) -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: #111;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .quick-payment {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .payment-button {
+      background-color: #e0e0e0;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+
+    .payment-button:hover {
+      background-color: #d0d0d0;
+    }
+
+    input[type="email"],
+    select,
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 6px;
+      background-color: #222;
+      color: #fff;
+      font-size: 15px;
+    }
+
+    .radio-group {
+      display: block;
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+
+    .radio-group input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    .radio-group img {
+      vertical-align: middle;
+      margin-left: 8px;
+      height: 20px;
+    }
+
+    #creditCardFields {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .flex-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .flex-row input {
+      flex: 1;
+    }
+
+    .checkbox-label {
+      display: block;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    .submit-btn {
+      background-color: #6a5acd;
+      color: white;
+      border: none;
+      padding: 15px;
+      font-size: 16px;
+      width: 100%;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #5d4b9a;
+    }
+  </style>
 </head>
 <body>
 
-<div class="payment-container">
-
+<div class="container">
   <h2>Ekspresowa realizacja zakupu</h2>
 
   <!-- Szybkie płatności -->
@@ -24,10 +140,6 @@
   <!-- E-mail -->
   <input type="email" placeholder="E-mail" required />
 
-  <!-- Metoda wysyłki -->
-  <h3>Metoda wysyłki</h3>
-  <textarea rows="3" disabled>Wprowadź adres wysyłki, aby wyświetlić dostępne metody wysyłki.</textarea>
-
   <!-- Opcje płatności -->
   <h3>Płatność</h3>
   <p style="margin-bottom: 10px;">Wszystkie transakcje są bezpieczne i szyfrowane.</p>
@@ -37,19 +149,12 @@
     <span>Karta kredytowa</span>
     <img src="visa.png" alt="VISA" />
     <img src="mastercard.png" alt="Mastercard" />
-    <img src="Amex.png" alt="AMEX" />
   </label>
 
   <label class="radio-group">
     <input type="radio" name="paymentMethod" value="paypal" />
     <span>PayPal</span>
     <img src="paypal.png" alt="PayPal" />
-  </label>
-
-  <label class="radio-group">
-    <input type="radio" name="paymentMethod" value="klarna" />
-    <span>Klarna</span>
-    <img src="Klarna.png" alt="Klarna" />
   </label>
 
   <label class="radio-group">
@@ -68,19 +173,12 @@
     <input type="text" placeholder="Nazwisko na karcie" required />
     <label class="checkbox-label">
       <input type="checkbox" checked />
-      <span>Użyj adresu wysyłki jako adresu rozliczeniowego</span>
+      <span>Zapisz dane karty do szybszych zakupów</span>
     </label>
   </div>
 
-  <!-- Zapamiętaj dane -->
-  <label class="checkbox-label">
-    <input type="checkbox" />
-    <span>Zapisz moje informacje w celu szybszej realizacji zakupu</span>
-  </label>
-
   <!-- Przycisk płatności -->
   <button class="submit-btn">Zapłać teraz</button>
-
 </div>
 
 <script>

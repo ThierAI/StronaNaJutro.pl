@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma Płatności - WebInk.pl</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9; 
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .payment-methods {
+            margin-top: 20px;
+        }
+        .payment-method {
+            margin-bottom: 10px;
+        }
+        .payment-method input[type="radio"] {
+            margin-right: 10px;
+        }
+        .payment-method img {
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+        .remember-me {
+            margin-top: 20px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Ekspresowa realizacja zakupu</h2>
+        <div class="payment-methods">
+            <button class="payment-button">shop Pay</button>
+            <button class="payment-button">PayPal</button>
+            <button class="payment-button">G Pay</button>
+            <p>LUB</p>
+        </div>
+
+        <!-- Sekcja kontakt -->
+        <h3>Kontakt</h3>
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Podaj adres e-mail" required>
+        </div>
+
+        <!-- Sekcja dostawy -->
+        <h3>Dostawa</h3>
+        <div class="form-group">
+            <label for="country">Kraj/region</label>
+            <select id="country" name="country" required>
+                <option value="PL">Polska</option>
+                <!-- Dodaj inne kraje, jeśli konieczne -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="firstName">Imię</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Podaj imię" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Nazwisko</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Podaj nazwisko" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Adres</label>
+            <input type="text" id="address" name="address" placeholder="Podaj adres" required>
+        </div>
+        <div class="form-group">
+            <label for="apartment">Mieszkanie, apartament itp. (opcjonalnie)</label>
+            <input type="text" id="apartment" name="apartment" placeholder="Podaj numer mieszkania/apartamentu">
+        </div>
+        <div class="form-group">
+            <label for="postalCode">Kod pocztowy</label>
+            <input type="text" id="postalCode" name="postalCode" placeholder="Podaj kod pocztowy" required>
+        </div>
+        <div class="form-group">
+            <label for="city">Miasto</label>
+            <input type="text" id="city" name="city" placeholder="Podaj miasto" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" placeholder="Podaj numer telefonu" required>
+        </div>
+
+        <!-- Sekcja metody wysyłki -->
+        <h3>Metoda wysyłki</h3>
+        <div class="form-group">
+            <textarea id="shippingMethod" name="shippingMethod" rows="3" placeholder="Wprowadź adres wysyłki, aby wyświetlić dostępne metody wysyłki." disabled></textarea>
+        </div>
+
+        <!-- Sekcja płatności -->
+        <h3>Płatność</h3>
+        <p>Wszystkie transakcje są bezpieczne i szyfrowane.</p>
+        <div class="form-group payment-method">
+            <input type="radio" id="creditCard" name="paymentMethod" value="creditCard" checked>
+            <label for="creditCard">Karta kredytowa</label>
+            <img src="https://via.placeholder.com/30x20?text=VISA" alt="VISA">
+            <img src="https://via.placeholder.com/30x20?text=Mastercard" alt="Mastercard">
+            <img src="https://via.placeholder.com/30x20?text=AMEX" alt="AMEX">
+        </div>
+        <div class="form-group payment-method">
+            <input type="radio" id="paypal" name="paymentMethod" value="paypal">
+            <label for="paypal">PayPal</label>
+            <img src="https://via.placeholder.com/30x20?text=PayPal" alt="PayPal">
+        </div>
+        <div class="form-group payment-method">
+            <input type="radio" id="klarna" name="paymentMethod" value="klarna">
+            <label for="klarna">Klarna</label>
+            <img src="https://via.placeholder.com/30x20?text=Klarna" alt="Klarna">
+        </div>
+        <div class="form-group payment-method">
+            <input type="radio" id="blik" name="paymentMethod" value="blik">
+            <label for="blik">BLIK</label>
+            <img src="https://via.placeholder.com/30x20?text=BLIK" alt="BLIK">
+        </div>
+
+        <!-- Sekcja kart kredytowych -->
+        <div id="creditCardDetails" style="display: block;">
+            <div class="form-group">
+                <label for="cardNumber">Numer karty</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="XXXX XXXX XXXX XXXX" required>
+            </div>
+            <div class="form-group">
+                <label for="expiryDate">Data ważności (MM / RR)</label>
+                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM / RR" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">Kod weryfikacyjny</label>
+                <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+            </div>
+            <div class="form-group">
+                <label for="cardHolderName">Nazwisko na karcie</label>
+                <input type="text" id="cardHolderName" name="cardHolderName" placeholder="Nazwisko" required>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="useShippingAddress" name="useShippingAddress" checked>
+                <label for="useShippingAddress">Użyj adresu wysyłki jako adresu rozliczeniowego</label>
+            </div>
+        </div>
+
+        <!-- Sekcja pamiętaj mnie -->
+        <div class="remember-me">
+            <input type="checkbox" id="rememberMe" name="rememberMe">
+            <label for="rememberMe">Zapisz moje informacje w celu szybszej realizacji zakupu</label>
+        </div>
+
+        <!-- Przycisk płatności -->
+        <button class="submit-btn">Zapłać teraz</button>
+    </div>
+</body>
+</html>

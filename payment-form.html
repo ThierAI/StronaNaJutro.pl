@@ -192,3 +192,25 @@
     </div>
 </body>
 </html>
+
+<script>
+    // Funkcja do odczytu parametrów URL
+    function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
+    // Pobranie parametrów URL
+    const packageType = getQueryParam('package');
+    const amount = getQueryParam('amount');
+
+    // Wyświetlenie informacji o pakiecie i kwocie
+    document.addEventListener('DOMContentLoaded', () => {
+        const packageInfoElement = document.createElement('p');
+        packageInfoElement.style.color = '#333';
+        packageInfoElement.textContent = `Wybrałeś pakiet: ${packageType} (${amount} zł)`;
+
+        const container = document.querySelector('.container');
+        container.insertBefore(packageInfoElement, container.firstChild);
+    });
+</script>
